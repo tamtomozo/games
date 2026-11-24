@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ゲームLP一覧</title>
-<meta name="description" content="ブラウザで遊べる4本のゲーム（PLANET PANZER／木製プロペラ長距離飛行／IRON WASTELAND／隠された真実）のランディングページ一覧。">
+<meta name="description" content="ブラウザで遊べる5本のゲーム（PLANET PANZER／木製プロペラ長距離飛行／IRON WASTELAND／隠された真実／やきたて！まるパン だいぼうけん）のランディングページ一覧。">
 <meta name="theme-color" content="#0d0f13">
 <style>
   :root {
@@ -49,11 +49,12 @@
   /* ---------- カード一覧 ---------- */
   .grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 24px;
     padding-bottom: 64px;
   }
-  @media (max-width: 760px) { .grid { grid-template-columns: 1fr; gap: 20px; } }
+  @media (max-width: 1000px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 640px)  { .grid { grid-template-columns: 1fr; gap: 20px; } }
 
   .card {
     --accent: #fff;
@@ -142,6 +143,7 @@
   .plane  { --accent: #5aa9ef; }
   .robo   { --accent: #ff6a33; }
   .secret { --accent: #d6b061; }
+  .pan    { --accent: #f6b85a; }
 
   footer { border-top: 1px solid var(--line); padding: 20px 0 32px; color: var(--dim); font-size: 12px; }
 
@@ -162,7 +164,7 @@
 <header class="wrap">
   <p class="eyebrow">LANDING PAGES</p>
   <h1>ゲームLP一覧</h1>
-  <p class="intro">ブラウザで遊べる4本のゲームのランディングページです。カードの画像かボタンから、各LPを開けます。</p>
+  <p class="intro">ブラウザで遊べる5本のゲームのランディングページです。カードの画像かボタンから、各LPを開けます。</p>
 </header>
 
 <main class="wrap">
@@ -249,6 +251,28 @@
         <div class="actions">
           <a class="btn primary" href="https://tamtomozo.github.io/mystery/lp/">LPを見る →</a>
           <a class="btn ghost" href="https://tamtomozo.github.io/mystery/">ゲームを遊ぶ</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- pan2 -->
+    <article class="card pan">
+      <a class="thumb" href="https://tamtomozo.github.io/game_pan/lp/" aria-label="やきたて！まるパン だいぼうけん のLPを開く">
+        <img src="img/pan.jpg" alt="まるパンとなかまのパンたちが麦畑にならぶタイトル画面" loading="lazy">
+        <span class="genre">2Dアクション</span>
+        <span class="folder">game_pan/lp</span>
+      </a>
+      <div class="body">
+        <h2 class="title">やきたて！まるパン だいぼうけん<small>こどもも遊べる 2Dアクション</small></h2>
+        <p class="catch">てきを すいこんで、パンに へんしん！</p>
+        <p class="desc">まんまるのパンが主人公。カレーパンやメロンパンに変身して、パンの国・海・岩山を冒険する。</p>
+        <ul class="specs">
+          <li>全3エリア・9ステージ</li><li>PC・スマホ対応</li><li>日本語 / English</li>
+        </ul>
+        <div class="actions">
+          <a class="btn primary" href="https://tamtomozo.github.io/game_pan/lp/">LPを見る →</a>
+          <a class="btn ghost" href="https://tamtomozo.github.io/game_pan/?lang=ja">ゲームを遊ぶ</a>
+          <a class="btn sub" href="https://tamtomozo.github.io/game_pan/lp/en.html" lang="en">EN</a>
         </div>
       </div>
     </article>
